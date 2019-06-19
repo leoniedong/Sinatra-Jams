@@ -1,0 +1,8 @@
+<h1> 🎸Jams 🎸 </h1>
+<% @artists.each do |artist| %>
+    <a href="/artists/<%= artist.id %>">
+    <ul>
+    <li><%= artist.name %></li>
+    </ul>
+    </a>
+    <% end %>
