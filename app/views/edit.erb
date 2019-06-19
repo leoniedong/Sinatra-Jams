@@ -1,0 +1,10 @@
+<h2>Editing Artist <%= @artist.id %></h2>
+<form method="POST" action="/artists/<%= @artist.id%>">
+    <input type="hidden" name="_method" value="PATCH">
+    <p>Name: <input name="name" type="text" value="<%= @artist.name %>"></p>
+    <p>Age: <input name="age" type="text" value="<%= @artist.age %>"></p>
+    <p>Bio: <input name="bio" type="text" value="<%= @artist.bio %>"><p>
+
+    <input type="submit">
+    </form>
+

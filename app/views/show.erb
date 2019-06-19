@@ -4,3 +4,10 @@
     <li>Age: <%= @artist.age %></li>
     <li>Bio: <%= @artist.bio %></li>
 </ul>
+
+<a href="/artists/<%=@artist.id%>/edit"> Edit this artist </a>
+
+<form method="POST" action="/artists/<%= @artist.id %>">
+    <input name="_method" type="hidden" value="DELETE">
+    <input type="submit" value="DELETE">
+    </form>
